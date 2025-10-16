@@ -1,0 +1,5 @@
+/* Remove transitions from active elements (such as the search icon) for performance reasons */
+div[jsaction]
+{
+	transition-duration: 0s !important;
+}

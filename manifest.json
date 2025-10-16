@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "Assistant Intranet",
+	"version": "0.1.1",
+	"description": "Optimise la présentation du site Intranet pour les terminaux RDP",
+	"author": "Ludovic ARNAUD",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "@assistant-intranet.ludo-ba13",
+			"update_url": "https://ludoba13.github.io/",
+			"data_collection_permissions": {
+				"required": ["none"]
+			}
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://sites.google.com/banquealimentaire.org/intranet/*"],
+			"css":     ["transitions.css"]
+		}
+	]
+}
