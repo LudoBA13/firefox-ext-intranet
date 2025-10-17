@@ -1,5 +1,7 @@
 /* Remove transitions from active elements (such as the search icon) for performance reasons */
-div[jsaction]
+div[jsaction],
+/* Accordion menus */
+ul
 {
 	transition-duration: 0s !important;
 }
